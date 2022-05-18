@@ -7,7 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    
+    @IBOutlet weak var labelText: UILabel!
+    
+    @IBOutlet weak var hairImage: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,5 +21,15 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func tapMe(_ sender: Any)
+    {
+        hairImage.image = UIImage(named: "dutch")
+        labelText.text = "Dutch Braid"
+        
+        
+        
+    }
+    
+    
 }
 
